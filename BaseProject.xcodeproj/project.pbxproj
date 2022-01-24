@@ -16,6 +16,11 @@
 		EE2E24542790A03600A72222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2E24522790A03600A72222 /* LaunchScreen.storyboard */; };
 		EE2E245F2790A03600A72222 /* BaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2E245E2790A03600A72222 /* BaseProjectTests.swift */; };
 		EE2E246A2790A03600A72222 /* BaseProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2E24692790A03600A72222 /* BaseProjectUITests.swift */; };
+		EE2E24782790A05700A72222 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2E24772790A05700A72222 /* AppColors.swift */; };
+		EE2E247C2790A3B200A72222 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2E247B2790A3B200A72222 /* AppFonts.swift */; };
+		EE2E24812790A4BD00A72222 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE2E247E2790A4BD00A72222 /* Lato-Bold.ttf */; };
+		EE2E24822790A4BD00A72222 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE2E247F2790A4BD00A72222 /* Lato-Regular.ttf */; };
+		EE2E24832790A4BD00A72222 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE2E24802790A4BD00A72222 /* Lato-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		EE2E24652790A03600A72222 /* BaseProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2E24692790A03600A72222 /* BaseProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProjectUITests.swift; sourceTree = "<group>"; };
 		EE2E246B2790A03600A72222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2E24772790A05700A72222 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		EE2E247B2790A3B200A72222 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		EE2E247E2790A4BD00A72222 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		EE2E247F2790A4BD00A72222 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		EE2E24802790A4BD00A72222 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,7 @@
 				EE2E24442790A03500A72222 /* AppDelegate.swift */,
 				EE2E24462790A03500A72222 /* SceneDelegate.swift */,
 				EE2E24482790A03500A72222 /* ViewController.swift */,
+				EE2E24842790A6B800A72222 /* Custom */,
 				EE2E244A2790A03500A72222 /* Main.storyboard */,
 				EE2E24502790A03600A72222 /* Assets.xcassets */,
 				EE2E24522790A03600A72222 /* LaunchScreen.storyboard */,
@@ -129,6 +140,34 @@
 				EE2E246B2790A03600A72222 /* Info.plist */,
 			);
 			path = BaseProjectUITests;
+			sourceTree = "<group>";
+		};
+		EE2E247D2790A4AD00A72222 /* LatoFont */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E247E2790A4BD00A72222 /* Lato-Bold.ttf */,
+				EE2E247F2790A4BD00A72222 /* Lato-Regular.ttf */,
+				EE2E24802790A4BD00A72222 /* Lato-Thin.ttf */,
+			);
+			path = LatoFont;
+			sourceTree = "<group>";
+		};
+		EE2E24842790A6B800A72222 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E24852790A6C600A72222 /* Styles */,
+				EE2E247D2790A4AD00A72222 /* LatoFont */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		EE2E24852790A6C600A72222 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E24772790A05700A72222 /* AppColors.swift */,
+				EE2E247B2790A3B200A72222 /* AppFonts.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +274,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2E24542790A03600A72222 /* LaunchScreen.storyboard in Resources */,
+				EE2E24832790A4BD00A72222 /* Lato-Thin.ttf in Resources */,
 				EE2E24512790A03600A72222 /* Assets.xcassets in Resources */,
+				EE2E24822790A4BD00A72222 /* Lato-Regular.ttf in Resources */,
 				EE2E244C2790A03500A72222 /* Main.storyboard in Resources */,
+				EE2E24812790A4BD00A72222 /* Lato-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2E24492790A03500A72222 /* ViewController.swift in Sources */,
+				EE2E247C2790A3B200A72222 /* AppFonts.swift in Sources */,
 				EE2E24452790A03500A72222 /* AppDelegate.swift in Sources */,
 				EE2E244F2790A03500A72222 /* BaseProject.xcdatamodeld in Sources */,
+				EE2E24782790A05700A72222 /* AppColors.swift in Sources */,
 				EE2E24472790A03500A72222 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
